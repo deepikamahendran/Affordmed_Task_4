@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+        }
+        #welcome { background: lightblue; }
+        #about { background: lightgray; }
+        #services { background: lightgoldenrodyellow; }
+        #portfolio { background: lightpink; }
+        #contact { background: lightgreen; }
+        #more { background: lightcoral; }
+        .contact-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+        }
+        .contact-box input, .contact-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-box button {
+            margin-top: 10px;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-box button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#welcome">Welcome</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#more">More</a>
+    </nav>
+    <section id="welcome">
+        <h1>Welcome to Our Website</h1>
+        <p>We are delighted to have you here. Explore our website to learn more about us.</p>
+    </section>
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We are a company dedicated to providing top-quality services and solutions to our clients.</p>
+    </section>
+    <section id="services">
+        <h1>Our Services</h1>
+        <p>We offer a variety of services including web development, graphic design, and digital marketing.</p>
+    </section>
+    <section id="portfolio">
+        <h1>Our Portfolio</h1>
+        <p>Take a look at some of our past projects and see the quality of work we deliver.</p>
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Have any questions? Feel free to reach out to us anytime.</p>
+        <div class="contact-box">
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <section id="more">
+        <h1>More Information</h1>
+        <p>Stay connected with us for the latest updates and news.</p>
+    </section>
+</body>
+</html>
